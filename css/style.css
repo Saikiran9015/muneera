@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* ===== BACKGROUND GRADIENT (PINK THEME) ===== */
+.gradient {
+  background: linear-gradient(
+    135deg,
+    #b03060,
+    #d63384,
+    #f06292
+  );
+  height: 100vh;
+  color: white;
+}
+
+/* ===== MAIN LANDING ===== */
+.landing {
+  text-align: center;
+  padding-top: 70px;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* ===== TAGLINE ===== */
+.tagline {
+  margin-top: 12px;
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+/* ===== CARD CONTAINER ===== */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 70px;
+  flex-wrap: wrap;
+}
+
+/* CENTER SINGLE CARD */
+.cards.single {
+  margin-top: 40px;
+}
+
+/* ===== CARD STYLE ===== */
+.card {
+  background: white;
+  color: #333;
+  padding: 34px 28px;
+  width: 260px;
+  border-radius: 22px;
+  text-decoration: none;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CARD HOVER */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+/* CARD TITLE */
+.card h2 {
+  margin-bottom: 12px;
+  color: #b03060;
+  font-size: 22px;
+}
+
+/* CARD TEXT */
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ACCENT BORDERS */
+.card.shop {
+  border-top: 6px solid #b03060;
+}
+
+.card.customer {
+  border-top: 6px solid #d63384;
+}
+
+.card.delivery {
+  border-top: 6px solid #f06292;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  margin-top: 70px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ===== MOBILE FRIENDLY ===== */
+@media (max-width: 768px) {
+  .cards {
+    gap: 25px;
+    margin-top: 50px;
+  }
+
+  .logo {
+    font-size: 38px;
+  }
+}

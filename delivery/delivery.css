@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7c1d9, #fce4ec);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGIN BOX */
+.login-box {
+  width: 360px;
+  max-width: 90%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* HEADING */
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #b03060; /* dark pink */
+}
+
+/* INPUT */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+/* BUTTON */
+.login-box button {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #b03060, #d63384);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  opacity: 0.9;
+}
+
+/* ERROR */
+.error {
+  background: #ffe1e8;
+  color: #a1003f;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* BACK TO INDEX BUTTON */
+.back-index-btn {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #b03060;
+  text-decoration: none;
+}
+
+.back-index-btn:hover {
+  text-decoration: underline;
+}

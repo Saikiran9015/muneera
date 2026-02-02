@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+/* ===== PAGE BACKGROUND (NO BLUR) ===== */
+body {
+  min-height: 100vh;
+  background: url("images/login_bg.jpg") no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== LOGIN CARD ===== */
+.box {
+  width: 380px;
+  max-width: 90%;
+  background: #fde6ee; /* soft pink base */
+  padding: 32px 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== HEADING ===== */
+.box h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  color: #b03060; /* dark pink */
+  font-weight: 700;
+}
+
+/* ===== SUCCESS & ERROR ===== */
+.success {
+  background: #fde2ec;
+  color: #8e244d;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.error {
+  background: #fdecea;
+  color: #a93226;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* ===== INPUTS ===== */
+.box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #f2b6cc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.box input:focus {
+  outline: none;
+  border-color: #d63384;
+  box-shadow: 0 0 0 2px rgba(214, 51, 132, 0.15);
+}
+
+/* ===== BUTTON ===== */
+.box button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #d63384, #b03060);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.box button:hover {
+  background: linear-gradient(135deg, #b03060, #8e244d);
+}
+
+/* ===== LINKS ===== */
+.box p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.box a {
+  color: #b03060;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.box a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 480px) {
+  .box {
+    padding: 26px;
+  }
+
+  .box h2 {
+    font-size: 20px;
+  }
+}
+
